@@ -2,8 +2,9 @@
     justify-content: flex-end;
 }
 
-.mobile-text-hover h3 {
+.cards .mobile-text-hover h3 {
     font-size: 1.4rem;
+    margin-top: 0;
 }
 
 .mobile-text-hover p {
@@ -17,6 +18,11 @@
 .mobile-text-hover {
     max-width: 330px;
     z-index: 5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
 }
 
 .mobile-text-hover h3, p, .text-flex {

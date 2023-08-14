@@ -79,3 +79,10 @@ li + li {
     text-decoration: none;
     cursor: pointer;
 }
+
+@media ( max-width: 500px) {
+    .navLogo {
+        font-size: .7rem;
+        padding-right: .5rem;
+    }
+}
