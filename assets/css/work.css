@@ -143,6 +143,9 @@ h2 {
         max-width: 90%;
         margin: 4rem auto 0;
         max-height: 40rem;
-        
+    }
+
+    .project .container .portfolio-video {
+        margin-bottom: 4rem;
     }
 }
