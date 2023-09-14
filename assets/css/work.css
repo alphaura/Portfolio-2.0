@@ -34,6 +34,7 @@ section {
     text-decoration: none;
     color: black;
     font-style: italic;
+    font-weight: bold;
 }
 
 .portfolio-text:hover {
