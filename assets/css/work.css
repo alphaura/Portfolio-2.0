@@ -148,4 +148,8 @@ h2 {
     .project .container .portfolio-video {
         margin-bottom: 4rem;
     }
+
+    .portfolio-image-hide {
+        display: none;
+    }
 }
