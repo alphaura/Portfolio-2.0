@@ -113,6 +113,10 @@ section.about h3 {
 
 /* WORK section */
 
+.hide-mobile {
+    display: none;
+}
+
 section#work {
     background-color: #042940;
 }
@@ -140,6 +144,10 @@ section#work h2 {
 
 #project4 img{
     margin-bottom: 0;
+}
+
+.set3 {
+    display: block;
 }
 
 #work .moreprojects {
@@ -338,6 +346,14 @@ section#work h2 {
 
     #work .projects {
         max-width: 80rem;
+    }
+
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide-desktop {
+        display: none;
     }
     
 }
