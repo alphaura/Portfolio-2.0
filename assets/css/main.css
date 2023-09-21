@@ -142,37 +142,12 @@ section#work h2 {
     margin: 0 auto 2rem;
 }
 
-#project4 img{
+#project5 img{
     margin-bottom: 0;
 }
 
 .set3 {
     display: block;
-}
-
-#work .moreprojects {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#work .moreprojects a {
-    text-decoration: none;
-    color: #DBF227;
-    display: flex;
-    pointer-events: none;
-}
-
-#work .moreprojects span {
-    align-self: center;
-    font-size: .7rem;
-    font-weight: 400;
-    font-style: italic;
-}
-
-#work .moreprojects svg {
-    max-width: 1.5rem;
 }
   
 /* Media queries for larger screen sizes then 700px */
@@ -295,6 +270,11 @@ section#work h2 {
     }
     
     .set2 {
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .set3 {
         display: flex;
         margin-top: 2rem;
     }
