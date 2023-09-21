@@ -94,6 +94,18 @@ h2 {
     padding-bottom: 0;
 }
 
+.scrimba {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.scrimba:hover {
+    color: #9FC131;
+    text-decoration: underline;
+}
+
 .project video {
     display: none;   
 }
