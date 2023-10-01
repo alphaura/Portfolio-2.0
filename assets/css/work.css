@@ -94,14 +94,14 @@ h2 {
     padding-bottom: 0;
 }
 
-.scrimba {
+.work-description a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-style: italic;
 }
 
-.scrimba:hover {
+.work-description a:hover {
     color: #9FC131;
     text-decoration: underline;
 }
