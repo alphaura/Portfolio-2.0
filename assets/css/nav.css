@@ -1,53 +1,70 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
 .nav {
-    padding: 1rem 3rem;
     position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 999;
-    background: rgba(3, 39, 61, 0.886);
-    backdrop-filter: blur(1px);
+    padding: 2rem 1.5rem;
+    background: rgba(245, 245, 245, 0.45);
+    backdrop-filter: blur(1rem);
+    z-index: 999999;
+    transition:  0.3s ease-in-out;
+    animation: slideIn 2.5s ease;
+}
+
+/* Add this class when scrolling down */
+.nav.scrolled {
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .nav-flex {
     display: flex;
     justify-content: space-between;
-    
+}
+
+.projects-bg {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.projects-nav a {
+    color: whitesmoke;
+}
+
+.main-nav a {
+    color: black;
 }
 
 .nav ul {
     padding: 0;
+    margin: 0;
     display: flex;
+    flex-direction: column;
 }
 
 .nav ul li {
     list-style: none;
+    text-align: center;
 }
 
 li + li {
-    padding-left: 2.5rem;
+    padding-top: .8rem;
 }
 
 .nav ul li a {
     position: relative;
     display: inline-block;
-    color: inherit;
     transition: transform 0.3s ease-out;
     text-decoration: none;
-    color: #ECECEC;
-    font-weight: 200;
+    font-weight: bold;
+    font-size: .8rem;
 }
 
 .nav ul li a::after {
@@ -65,7 +82,7 @@ li + li {
   
   .nav ul li a:hover {
     transform: translateY(-2px);
-    font-weight: 300;
+    font-weight: bold;
   }
   
   .nav ul li a:hover::after {
@@ -73,16 +90,27 @@ li + li {
   }
 
 .navLogo {
-    align-self: center;
-    color: #DBF227;
-    font-weight: 700;
+    align-self: flex-start;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    font-size: .8rem;
 }
 
-@media ( max-width: 500px) {
-    .navLogo {
-        font-size: .7rem;
-        padding-right: .5rem;
+@media ( min-width: 768px ) {
+    .nav-flex a, .nav ul li a {
+        font-size: 1rem;
+    }
+
+    .nav ul {
+        flex-direction: row;
+    }
+
+    .nav ul li {
+        padding: 0;
+    }
+
+    .nav ul li + li {
+        padding-left: 1rem;
     }
 }

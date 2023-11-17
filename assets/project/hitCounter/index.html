@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="../../css/work.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/nav.css">
-    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap" rel="stylesheet">
@@ -20,14 +26,14 @@
     <!-- Navigation bar -->
 
     <header>
-        <div class="nav">
+        <div class="nav projects-bg">
             <div class="container">
                 <nav>
-                    <div class="nav-flex">
+                    <div class="nav-flex projects-nav">
                         <a href="../../../index.html" class="navLogo">Front-End Developer</a>
                         <ul>
                             <li><a href="../../../index.html">Home</a></li>
-                            <li><a href="../../../index.html#work">Work</a></li>
+                            <li><a href="../index.html">Portfolio</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -35,11 +41,12 @@
             </div>
         </div>
 
+        <div class="spacer"></div>
+
     <!-- Hero Section -->
 
-        <div class="hero">
-            <img src="../../img/projects/hitCounterMobileBanner.png" alt="Paintball hit counter using JavaScript" class="mobile">
-            <img src="../../img/projects/hitCounterBannerDesktop.png" alt="Paintball hit counter using JavaScript" class="desktop">
+        <div class="hero hitCounter-hero">
+            <h1>Hit Counter</h1>
         </div>
     </header>
 
@@ -47,34 +54,78 @@
 
     <main>
         <section class="project">
-            <div class="container">
-                <h2>WORK</h2>
-                <div class="work--flex">
-                    <div class="col1">
-                        <h1>Hit Counter</h1>
-                    </div>
-                    <div class="col2">
-                        <p>First project with the focus on JavaScript implementation, of a working hit counter for paintball</p>
-                        <div class="flex">
-                            <h3>HTML, CSS & JavaScript</h3>
-                            <a href="https://hitcounter.netlify.app/" target="_blank">Live Demo</a>
+
+            <!-- Project description section -->
+
+           <div class="container-info">
+               <div class="project-info">
+                        <div class="project-title">
+                            <h2>NAME OF PROJECT</h2>
+                            <p>Hit Counter</p>
                         </div>
-                    </div>
-                </div>
-                <hr>
-                <img src="../../img/projects/hitCounterpreviewimg.png" alt="Preview image of the project design">
-                <div class="work-description">
-                    <p>My very first JavaScript focused project. In a previous course that I have done, we only brushed on JavaScript which was enough
-                        to get a decent grasp of some of the basic fundamentals, however, I wanted to delve into this language, in order to complete 
-                        the fundamental stack for web development.
-                    </p>
-                    <p>This project was created as part of the <a href="https://scrimba.com/" class="scrimba" target="_blank">Scrimba</a> course that I'm doing. While the JavaScript itself is very basic
-                       it was a very good starter as it allowed me to understand a bit more how this language is connected with HTML. Having responsiveness
-                       on top of mind, I decided to restructure the HTML provided in the course, to make the whole project responsive and played a bit
-                       with the good old friend flex-box.</p>
-                </div>
-                <video src="../../video/hitCounter.mov.mp4" autoplay="autoplay" loop="loop" aria-label="Video showcasing the site responsiveness"></video>
-            </div>
+                        <div class="project-lang">
+                            <h2>LANGUAGES USED</h2>
+                            <p>HTML, CSS & JavaScript</p>
+                        </div>
+                        <div class="project-desc">
+                            <h2>DESCRIPTION</h2>
+                            <p>Follow along project with the focus and understanding of JavaScript implementation, making a working hit counter for paintball</p>
+                        </div>
+                        <a href="https://hitcounter.netlify.app/" class="demo only-demo" target="_blank">VIEW PROJECT ↗</a>
+               </div>
+           </div>
+
+           <!-- Project photo -->
+
+           <div class="project-preview hitCounter-mock">
+           </div>
+
+           <!-- Process section -->
+
+           <div class="process">
+                <h3>The Process</h3>
+                <p>This project marked my initial foray into JavaScript through a step-by-step guide. While a previous course introduced me to JavaScript's basics, I aimed to deepen my 
+                    understanding of the language to solidify my fundamental web development skills.</p>
+
+                <p>Part of the <a href="https://scrimba.com/" target="_blank">Scrimba</a> course, this project, though basic in its JavaScript implementation, served as an excellent starting point. It provided insights into the connection 
+                    between JavaScript and HTML. With a focus on responsiveness, I took the opportunity to revamp the provided HTML structure, ensuring the entire project adapted seamlessly 
+                    to various devices using flex-box.</p>
+           </div>
+
+           <!-- Design Section -->
+
+           <div class="design">
+               <h3>The Design</h3>
+
+               <p>In terms of design, my primary focus was on updating the background image and the color scheme for text, buttons, and borders. The key "design" challenge lay in 
+                restructuring the HTML. The original code from the course lacked responsiveness, a feature I found crucial. Consequently, I redesigned the HTML to ensure the project was 
+                user-friendly across devices.</p>
+
+                <!-- <div class="design-imgs">
+                    <img src="../../img/projects/BasketballScoreboardImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboardImg2.png" alt="" class="design-img-2" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-3" loading="lazy">
+                    <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-4" loading="lazy">
+                </div> -->
+
+                <img src="../../img/projects/hitCounter/hitCounterpreviewimg.png" alt="Preview of the project" class="solo-img" loading="lazy">
+
+           </div>
+
+           <!-- The Challenge Section -->
+
+           <div class="challenge">
+                <h3>The Challenge</h3>
+                <p>This project, overall, posed minimal difficulty as it primarily served as a practical application of recently acquired basic JavaScript knowledge. The task involved 
+                    creating a functional paintball hit counter, allowing users to increment the count by 1. They could then save the count, triggering an automatic reset of both the 
+                    count number and text.</p>
+           </div>
+
+           <div class="video">
+               <video src="../../video/hitCounter.mov.mp4" autoplay loop></video>
+           </div>
+
+
         </section>
     </main>
 
@@ -83,18 +134,21 @@
     <footer id="contact-area">
         <div class="footer--container">
             <div id="contact">
-                <h2>Let's Connect</h2>
-                <p>I don't bite, believe me on that! <span class="text-show">
-                    (Believe it at your own risk 🦹)</span> <br><br> I might be the friendliest ninja you might have ever encountered, so 
-                    if you have suggestions, improvements, ideas, opportunities or wish to connect, feel free to <em>
-                        <a href="mailto:kylemagri98@gmail.com" class="email-link">drop me an email.</a></em></p>
+                <h2>Ready For Awesomeness?</h2>
+                <img src="../../img/resources/83.png" alt="X scribble design" class="scribble">
+                <h3>CONTACT</h3>
+                <p>If you have any feedback, opportunities or wish to connect further, feel free to <em><a href="mailto:kylemagri98@gmail.com" class="email-link">drop me an email.</a></em>, 
+                    or by connecting with me through LinkedIn below.</p>
             </div>
             <div id="signature">
                 <div class="footer--flex">
                     <p class="creator">Created by Kyle M.</p>
-                    <p class="socials">Socials: <a href="https://www.linkedin.com/in/kylemagri/" target="_blank"><img src="../../img/logo/linkedin.png" alt="LinkedIn Logo"></a></p>
+                    <p class="socials">Socials: <a href="https://www.linkedin.com/in/kylemagri/" target="_blank"><img src="../../../assets/img/logo/linkedin.png" alt="LinkedIn Logo"></a></p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="../../../index.js" defer></script>
+</body>
+</html>

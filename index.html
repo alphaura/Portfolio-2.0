@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap" rel="stylesheet">
@@ -23,7 +29,7 @@
             <div class="nav">
                 <div class="container">
                     <nav>
-                        <div class="nav-flex">
+                        <div class="nav-flex main-nav">
                             <a href="#home" class="navLogo">Front-End Developer</a>
                             <ul>
                                 <li><a href="#home">Home</a></li>
@@ -34,13 +40,17 @@
                     </nav>
                 </div>
             </div>
+
+            <!-- Spacer between nav and hero -->
+
+            <div class="spacer"></div>
         
             <!-- Hero section showing the title and the languages and tools I use. 
                  On mobile version the languages and tools are animated to move and on desktop they are to be in a fixed position -->
 
             <section class="hero">
                 <div class="container">
-                    <h1  id="home">Hi👋, I'm Kyle!<br>Welcome to my space.</h1>
+                    <h1  id="home">KYLE MAGRI</h1>
                     <h6>Languages and Tools</h6>
                     <div class="logos">
                         <div class="logos-slide">
@@ -61,7 +71,7 @@
                                 <p>Git</p>
                             </div>
                             <div class="github">
-                                <img src="assets/img/logo/github-mark/github-mark-white.svg" alt="GitHub Logo">
+                                <img src="assets/img/logo/github-mark/github-black.png" alt="GitHub Logo">
                                 <p>GitHub</p>
                             </div>
                             <div class="figma">
@@ -93,7 +103,7 @@
                                 <p>Git</p>
                             </div>
                             <div class="github">
-                                <img src="assets/img/logo/github-mark/github-mark-white.svg" alt="GitHub Logo">
+                                <img src="assets/img/logo/github-mark/github-black.png" alt="GitHub Logo">
                                 <p>GitHub</p>
                             </div>
                             <div class="figma">
@@ -116,9 +126,8 @@
 
         <section class="about">
             <div class="container">
-                <h3>The brain behind</h3>
                 <div class="aboutme--flex">
-                    <h2>A lil'bit about me</h2>
+                    <h2>BEHIND THE BRAIN</h2>
                     <div class="flex">
                         <div class="col1">
                             <p>Hey there, I'm Kyle, the wizard of wonder from the enchanting island of Malta! Age? Age is just a variable in my world of perpetual fun.</p>
@@ -142,15 +151,61 @@
 
         <section id="work">
             <div class="container">
-                <h3>Portfolio</h3>
-                <h2>Work</h2>
                 <div class="projects">
-                    <a href="assets/project/crlsite/index.html" target="_blank" id="project1"><img src="assets/img/projects/crlthumbnail.jpg" alt="A landing page project from a 21 day challenge for responsive design"></a>
-                    <a href="assets/project/csCanned/index.html" target="_blank" id="project2"><img src="assets/img/projects/csCannedBanner.jpg" alt="A customer service efficiency project that quickens the reply to the customers"></a>
-                    <a href="assets/project/fem/index.html" target="_blank" id="project3" class="hide-desktop"><img src="assets/img/projects/FEMThumbnail.png" alt="This project leads to Front-end Mentor challenges that I have done"></a>
-                    <a href="assets/project/portfolio-2.0/index.html" target="_blank" id="project4"><img src="assets/img/projects/portfolioThumbnail.png" alt="How I built my second version of my portfolio"></a>
-                    <a href="assets/project/hitCounter/index.html" target="_blank" id="project5"><img src="assets/img/projects/hitCounterthumnbail.png" alt="Paintball hit counter using JavaScript"></a>
-                    <a href="assets/project/basketballscoreboard/index.html" target="_blank" id="project6"><img src="assets/img/projects/BasketballScoreboardThumbnail.png" alt="First solo JavaScript project, designed and developed by myself making a functional basketball scoreboard"></a>
+                    <div class="highlight1">
+                        <a href="assets/project/portfolio-2.0/index.html" target="_blank" id="project4"><img src="assets/img/projects/portfolio2.0/portfolio-thumbnail.png" alt="Silver Macbook closed midway on a wooden table having a modern white chair close by, photo credit to Luca Bravo"></a>
+                        <h3>Portfolio 2.0</h3>
+                        <p>Check out how I came up with creating my portfolio version 2.0, from the design aspect all the way to having it coded and finalized.</p>
+                    </div>
+                    <div class="highlight2">
+                        <a href="assets/project/basketballscoreboard/index.html" target="_blank" id="project5"><img src="assets/img/projects/basketballScoreboard/basketball-thumbnail.png" alt="Michael Jordan Graffiti, photo credit to Mike Von"></a>
+                        <h3>Basketball Scoreboard</h3>
+                        <p>First project with the focus on JavaScript implementation, of a working hit counter for paintball.</p>
+                    </div>
+                    <div class="highlight3">
+                        <a href="assets/project/crlsite/index.html" target="_blank" id="project1"><img src="assets/img/projects/crlSite/crl-thumbnail.png" alt="Website wireframe design, photo credit to Hal Gatewood"></a>
+                        <h3>Responsive Web Page</h3>
+                        <p>This was the final project of a 21-day course I completed, which required the creation of a fully responsive site following a design provided by the educator.</p>
+                    </div>
+                    <div class="highlight4">
+                        <a href="assets/project/csCanned/index.html" target="_blank" id="project2"><img src="assets/img/projects/csCannedReplies/cs-thumbnail.png" alt="Hand typing on a keyboard in dark space with orange ESC button, photo credit to Quinton Coetzee"></a>
+                        <h3>CS Canned Replies</h3>
+                        <p>This project is a re-creation of how I was introduced to coding back in 2021. A colleague and myself wanted to improve how we reply to the customers so we ended up making something of our own.</p>
+                    </div>
+                    <div class="highlight5">
+                        <a href="assets/project/fem/index.html" target="_blank" id="project3" class="hide-desktop"><img src="assets/img/projects/FEM/FEMThumbnail.png" alt="FrontEnd Mentor Challenges thumbnail"></a>
+                        <h3>Front End Mentor Projects</h3>
+                        <p>In this page, I showcase the completed challenges on Front-End Mentor. The languages used are HTML & CSS.</p>
+                    </div>
+                    <div class="highlight6">
+                        
+                    </div>
+                </div>
+                <a href="assets/project/index.html" class="moreProjects">More Projects Here <span>&#10230;</span></a>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <h2>The Creative Timeline</h2>
+            <br>
+            <hr>
+            <div class="container">
+                <div class="year2022">
+                    <p>2022</p>
+                    <div class="text">
+                        <p class="animate">Got Into Web Development</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="year2023">
+                    <p>2023</p>
+                    <div class="achieve-2023 text">
+                        <p class="animate delay1">Became Adobe Certified</p>
+                        <p class="animate delay2">Created My Portfolio Site</p>
+                        <p class="animate delay3">Built Personal Experience</p>
+                    </div>
+                </div>
+                <div class="year2024">
                 </div>
             </div>
         </section>
@@ -161,11 +216,11 @@
     <footer id="contact-area">
         <div class="footer--container">
             <div id="contact">
-                <h2>Let's Connect</h2>
-                <p>I don't bite, believe me on that! <span class="text-show">
-                    (Believe it at your own risk 🦹)</span> <br><br> I might be the friendliest ninja you might have ever encountered, so
-                    if you have suggestions, improvements, ideas, opportunities or wish to connect, feel free to <em>
-                        <a href="mailto:kylemagri98@gmail.com" class="email-link">drop me an email.</a></em></p>
+                <h2>Ready For Awesomeness?</h2>
+                <img src="assets/img/resources/83.png" alt="X scribble design" class="scribble">
+                <h3>CONTACT</h3>
+                <p>If you have any feedback, opportunities or wish to connect further, feel free to <em><a href="mailto:kylemagri98@gmail.com" class="email-link">drop me an email.</a></em>, 
+                    or by connecting with me through LinkedIn below.</p>
             </div>
             <div id="signature">
                 <div class="footer--flex">
@@ -176,5 +231,6 @@
         </div>
     </footer>
 
+    <script src="index.js" defer></script>
 </body>
 </html>

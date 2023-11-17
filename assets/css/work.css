@@ -2,167 +2,614 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-family: 'Inter', sans-serif;
     cursor: crosshair;
 }
 
-img {
-    max-width: 100%;
+img, video {
+    width: 100%;
     display: block;
 }
 
-section {
-    padding: 3rem;
+/* Spacer between nav and hero */
+
+.spacer {
+    width: 100%;
+    min-height: 9.5rem;
+    background-color: black;
 }
 
-/* Hero Section */
+/* Hero Section + Projects background image */
 
 .hero {
-    padding: 0;
-    margin-top: 5.2rem;
+    min-height: 20rem;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
 }
 
-.desktop {
-    display: none;
+.bball-hero {
+    background-image: url(../img/projects/basketballScoreboard/BasketballScoreboard-bg.jpg);
 }
 
-/* Work Section */
-
-.portfolio-text {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-    font-weight: bold;
+.crl-hero {
+    background-image: url(../img/projects/crlSite/crl-bg.jpg);
 }
 
-.portfolio-text:hover {
-    text-decoration: underline;
-    color: #9FC131;
+.cs-hero {
+    background-image: url(../img/projects/csCannedReplies/cs-bg.jpg);
 }
 
-h1 {
-    padding-block: 2rem;
+.hitCounter-hero {
+    background-image: url(../img/projects/hitCounter/hitCounter-bg.jpg);
+}
+
+.portfolio-hero {
+    background-image: url(../img/projects/portfolio2.0/portfolio-bg.jpg);
+}
+
+.nft-hero {
+    background-image: url(../img/challenges/NFTCardComponent/NFT-bg.jpg);
+}
+
+.testGrid-hero {
+    background-image: url(../img/challenges/TestimonialGrid/TestGrid-bg.jpg);
+}
+
+.fourCard-hero {
+    background-image: url(../img/challenges/FourCardSection/FourCard-bg.jpg);
+}
+
+h1 {  
+    text-align: center;
     font-size: 2.5rem;
+    color: whitesmoke;
+    text-shadow: black 3px 3px;
+}
+
+
+/* Project description section */
+
+.project .container-info {
+    background-color: black;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
 }
 
 h2 {
-    font-size: 0.8rem;
+    color: #70E000;
 }
 
-.project {
-    background-color: #ECECEC;
+.project-info p {
+    color: whitesmoke;
+    padding-block: 1rem 2.5rem;
+    font-size: .8rem;
 }
 
-.project p {
-    text-align: justify;
-    font-weight: 300;
-    line-height: 1.5rem;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    padding-block: 2.5rem;
-
-}
-
-.flex h3:nth-child(1) {
-    font-weight: 200;
-    font-size: 1rem;
-}
-
-.flex a {
-    color: black;
+.project-info a {
+    color: whitesmoke;
+    font-size: .9rem;
     font-weight: bold;
 }
 
-.project img {
-    margin: 2rem auto 0;
+.demo {
+    padding-top: 3rem;
 }
 
-.work-description p{
-    padding-block: 2rem;
+.project-info .only-demo {
+    padding: 0;
 }
 
-.work-description p:first-child {
-    padding-top: 2rem;
+@media ( max-width: 765px) {
+    .demo {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s ease-out;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    
+    .demo::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 7.5rem;
+        height: 2px;
+        background-color: #9FC131;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .demo:hover {
+        transform: translateY(-2px);
+        font-weight: bold;
+      }
+      
+      .demo:hover::after {
+        transform: scaleX(1);
+      }
 }
 
-.work-description p:nth-last-child(1) {
+.figma {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.figma::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 10rem;
+    height: 2px;
+    background-color: #9FC131;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fem::after {
+    width: 9rem;
+  }
+
+  .design-specs::after {
+    width: 7rem;
+  }
+  
+  .figma:hover {
+    transform: translateY(-2px);
+    font-weight: bold;
+  }
+  
+  .figma:hover::after {
+    transform: scaleX(1);
+  }
+
+
+
+/* Project preview img */
+
+.project-preview {
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+}
+
+.bball-mock {
+    background-image: url(../img/projects/basketballScoreboard/BasketballScoreboard-preview.png);
+}
+
+.crl-mock {
+    background-image: url(../img/projects/crlSite/CRLMockup.png);
+}
+
+.cs-mock {
+    background-image: url(../img/projects/csCannedReplies/CSMockup.png);
+}
+
+.hitCounter-mock {
+    background-image: url(../img/projects/hitCounter/hitCounterMockup.png);
+}
+
+.portfolio-mock {
+    background-image: url(../img/projects/portfolio2.0/portfolioMockup.png);
+}
+
+.nft-mock {
+    background-image: url(../img/challenges/NFTCardComponent/nftMockup.png);
+}
+
+.testGrid-mock {
+    background-image: url(../img/challenges/TestimonialGrid/TestGridMockup.png);
+}
+
+.fourCard-mock {
+    background-image: url(../img/challenges/FourCardSection/FourCardMockup.png);
+}
+
+/* Process Section */
+
+.process {
+    padding-block: 2.5rem;
+    background-color: black;
+}
+
+h3 {
+    color: #70E000;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.process p {
+    padding: 0 1.5rem 1.5rem;
+    color: whitesmoke;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.process p:nth-last-child(1) {
     padding-bottom: 0;
 }
 
-.work-description a {
+.process a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
     font-style: italic;
+    color: inherit;
 }
 
-.work-description a:hover {
-    color: #9FC131;
+.process a:hover {
+    color: #70E000;
     text-decoration: underline;
 }
 
-.project video {
-    display: none;   
+/* Design Section */
+
+.design {
+    padding-block: 2.5rem 0;
+    background-color: whitesmoke;
 }
 
-@media ( min-width: 601px ) {
-
-    .mobile {
-        display: none;
-    }
-
-    .desktop {
-        display: block;
-        width: 100%;
-    }
+.design p {
+    padding: 0 1.5rem 1.5rem;
+    color: black;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    text-align: justify;
 }
 
-@media ( min-width: 850px ) {
-    .work--flex {
+.design p:last-child {
+    padding-bottom: 3rem;
+}
+
+.design img {
+    padding-inline: 1.5rem;
+    margin: 0 auto;
+    max-width: 30rem;
+    height: 30rem;
+}
+
+.design-img-1, .design-img-4 {
+    object-fit: contain;
+}
+
+.design-img-2, .design-img-3 {
+    object-fit: cover;
+    width: 100%;
+}
+
+.design .solo-img {
+    padding-bottom: 2rem;
+    max-width: 50rem;
+    height: auto;
+}
+
+.design img + img {
+    padding-top: 2rem;
+}
+
+.design-imgs {
+    padding-bottom: 2rem;
+}
+
+
+/* The Challenge Section */
+
+.challenge {
+    padding-block: 2.5rem;
+    background-color: black;
+}
+
+.challenge p {
+    padding: 0 1.5rem;
+    color: whitesmoke;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.challenge p + p {
+    padding-top: 1.5rem;
+}
+
+/* Video section */
+
+.video {
+    background-color: black;
+    padding-bottom: 5rem;
+}
+
+video {
+    max-width: 70rem;
+    margin: 0 auto;
+
+}
+
+
+
+/* Tablet Size */
+
+@media ( min-width: 768px ) {
+
+    /* Spacer between nav and hero */
+
+    .spacer {
+        min-height: 5.5rem;
+    }
+
+    /* Hero Section */
+
+    .hero {
+        min-height: 30rem;
+    }
+
+    /* Project description section */
+
+    .project-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "title lang" "desc desc" "figma demo";
+        place-items: center;
+        padding-inline: 5rem;
+    }
+
+    .project-desc {
+        grid-area: desc;
         display: flex;
+        width: 100%;
         justify-content: space-between;
     }
 
-    .work--flex .col1 {
-        padding-right: 5rem;
-        min-width: 25rem;
+    .project-title{
+        width: 100%;
+        text-align: left;
     }
 
-    .work--flex .col2 {
-        max-width: 50rem;
+    .project-lang {
+        width: 100%;
+        text-align: right;
     }
 
-    .project img {
-        min-width: 60%;
-        max-width: 50rem;
+    .project-desc p {
+        padding: 0;
+        max-width: 25rem;
     }
 
-    .project p {
-        padding-top: 2rem;
+    .project-info a:nth-last-child(1) {
+        padding: 0;
     }
 
-    .work-description {
-        max-width: 60rem;
+    .figma, .demo {
+        width: 100%;
+    }
+
+    .figma {
+        text-align: left;
+    }
+
+    .demo {
+        text-align: right;
+    }
+
+    .project-info .only-demo {
+        grid-area: demo;
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+
+    .demo {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s ease-out;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    
+    .demo::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        width: 7.8rem;
+        height: 2px;
+        background-color: #9FC131;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .demo:hover {
+        transform: translateY(-2px);
+        font-weight: bold;
+      }
+      
+      .demo:hover::after {
+        transform: scaleX(1);
+      }
+
+    /* Project preview img */
+
+    .project-preview {
+        min-height: 40rem;
+    }
+
+
+
+    /* Process, Design, Challenge Section */
+
+    .process, .challenge {
+        padding-block: 5rem;
+    }
+
+    .process p, .design p, .challenge p {
+        max-width: 40rem;
         margin: 0 auto;
     }
 
-    .project .container video {
-        display: block;
-        max-width: 90%;
-        margin: 4rem auto 0;
-        max-height: 40rem;
+    /* Design Section */
+
+    .design-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem 0;
     }
 
-    .project .container .portfolio-video {
-        margin-bottom: 4rem;
+   .design img + img {
+        padding-top: 0;
+   }
+}
+
+@media ( min-width: 1000px ) {
+
+    /* Project description section */
+
+    .project-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "title lang desc" "figma demo . ";
+        max-width: 70rem;
+        margin: 0 auto;
     }
 
-    .portfolio-image-hide {
-        display: none;
+    .project-info .only-demo {
+        grid-area: figma;
+    }
+
+    .project-desc {
+        flex-direction: column;
+    }
+
+    .project-desc p {
+        padding-top: 1rem;
+        max-width: 20rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .project-info p {
+        font-size: 1rem;
+    }
+    
+    .project-info a {
+        font-size: 1rem;
+    }
+
+    .project-desc, .project-lang, .project-title  {
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .figma, .demo {
+        text-align: left;
+    }
+
+    .demo::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 8.5rem;
+        height: 2px;
+        background-color: #9FC131;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .figma::after {
+        width: 11rem;
+      }
+
+      .fem::after {
+        width: 10rem;
+      }
+
+      .design-specs::after {
+        width: 8rem;
+      }
+
+    /* Project preview img */
+
+    .project-preview {
+        min-height: 50rem;
+    }
+
+    /* Process, Design, Challenge Section */
+
+    .process h3, .design h3, .challenge h3 {
+        font-size: 2.2rem;
+    }
+
+    .process p, .design p, .challenge p {
+        max-width: 60rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+    }
+
+
+    /* Design Section */
+
+    .design-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "img1 img2 img2" "img3 img3 img4";
+        gap: 2.5rem 1rem;
+        max-width: 57rem;
+        margin: 0 auto;
+    }
+
+    .design-imgs img {
+        max-height: 15rem;
+        padding: 0;
+        margin: 0 auto;
+        min-width: 100%;
+    }
+
+    .design-img-1 {
+        grid-area: img1;
+        min-height: 15rem;
+        min-width: 50rem;
+    }
+
+    .design-img-2 {
+        grid-area: img2;
+    }
+
+    .design-img-3 {
+        grid-area: img3;
+    }
+
+    .design-img-4 {
+        grid-area: img4;
+        min-height: 15rem;
+
     }
 }
