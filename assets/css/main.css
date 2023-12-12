@@ -162,7 +162,7 @@ section.about h3 {
 
 /* WORK section */
 
-.highlight5 {
+.highlight5, .highlight6 {
     display: none;
 }
 
@@ -499,7 +499,7 @@ section#work p {
         padding-inline: 2rem;
     }
 
-    .highlight5 {
+    .highlight5, .highlight6 {
         display: block;
     }
 
