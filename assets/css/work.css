@@ -67,6 +67,10 @@ img, video {
     background-image: url(../img/challenges/FourCardSection/FourCard-bg.jpg);
 }
 
+.bj-hero {
+    background-image: url(../img/projects/blackjack/blackjack-bg.jpg);
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -225,6 +229,10 @@ h2 {
     background-image: url(../img/challenges/FourCardSection/FourCardMockup.png);
 }
 
+.bj-mock {
+    background-image: url(../img/projects/blackjack/bjMockUp.png);
+}
+
 /* Process Section */
 
 .process {
@@ -281,6 +289,16 @@ h3 {
 
 .design p:last-child {
     padding-bottom: 3rem;
+}
+
+.design ul {
+    margin: 0 auto;
+    max-width: 60rem;
+    font-style: italic;
+}
+
+.design ul li {
+    margin: 0 auto;
 }
 
 .design img {

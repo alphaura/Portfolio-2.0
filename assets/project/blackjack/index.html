@@ -45,8 +45,8 @@
 
     <!-- Hero Section -->
 
-        <div class="hero bball-hero">
-            <h1>Basketball Scoreboard</h1>
+        <div class="hero bj-hero">
+            <h1>BlackJack</h1>
         </div>
     </header>
 
@@ -61,7 +61,7 @@
                <div class="project-info">
                         <div class="project-title">
                             <h2>NAME OF PROJECT</h2>
-                            <p>Basketball ScoreBoard</p>
+                            <p>BlackJack</p>
                         </div>
                         <div class="project-lang">
                             <h2>LANGUAGES USED</h2>
@@ -69,25 +69,25 @@
                         </div>
                         <div class="project-desc">
                             <h2>DESCRIPTION</h2>
-                            <p>First solo JavaScript project. Started from the design creation, all the way to the code implementation and development.</p>
+                            <p>BlackJack game solo project from Scrimba. Fully designed and developed</p>
                         </div>
-                        <a href="https://www.figma.com/file/NSYNZXAujLWkW1KLvE36kL/Basketball-Scoreboard?type=design&node-id=0%3A1&mode=design&t=38j9l8x8dwWdxqw8-1" class="figma" target="_blank">VIEW FIGMA DESIGN ↗</a>
-                        <a href="https://alphaura.github.io/BasketballScoreboard/" class="demo" target="_blank">VIEW PROJECT ↗</a>
+                        <a href="https://www.figma.com/file/1pwVOqa5qNtL6rjew7kUuP/BlackJack?type=design&node-id=0%3A1&mode=design&t=4FyXkp7gJ6wFmLAr-1" class="figma" target="_blank">VIEW FIGMA DESIGN ↗</a>
+                        <a href="https://alphaura.github.io/BlackJack/" class="demo" target="_blank">VIEW PROJECT ↗</a>
                </div>
            </div>
 
            <!-- Project photo -->
 
-           <div class="project-preview bball-mock">
+           <div class="project-preview bj-mock">
            </div>
 
            <!-- Process section -->
 
            <div class="process">
                 <h3>The Process</h3>
-                <p>I stepped into solo JavaScript projects, and this one's my first without a guide. Earlier, I got a feel for JavaScript with a hit counter, but it was more like a joint effort. 
-                    This time, no guiding hand. No access to full courses due to a free <a href="https://scrimba.com/" target="_blank">Scrimba</a> plan, but armed with just a project title, I 
-                    decided to create some magic.</p>
+                <p> As I progressed on the <a href="https://scrimba.com/" target="_blank">Scrimba</a> course, I worked on creating a simple 1 way BlackJack game along with the educator, however,
+                it was too simple for my liking, so I wanted to challenge myself and made it a project. The idea of the project is to create a better real-life or online blackjack game against
+                the dealer with proper triggers following the rules of the game.</p>
            </div>
 
            <!-- Design Section -->
@@ -95,11 +95,21 @@
            <div class="design">
                <h3>The Design</h3>
 
-               <p>The task? Build a working basketball scoreboard. With that goal, I sketched it out on Figma, ensuring it looked good on various devices. Once the design was set, I switched 
-                to coding, starting with HTML and making sure the structure made sense. Then, I added the design touch with CSS.</p>
+               <p>The design on Figma, is somewhat unrecognisable from the final design you see in the live demo, that is because as I was coding the project, ideas to make the game more relevant
+                to a real-life game were popping up, but the context still remains the same. I turned the design of the game to a more minimal look, just how I like it, as it keeps it clean and more
+                focused on the game execution.</p>
 
-               <p>With design and responsiveness checked, it was JavaScript time. A well-structured HTML helped me visualize how JavaScript would blend in. The aim? Update scores dynamically 
-                based on baskets—3, 2, or 1 point—for both home and away teams.</p>
+               <p>The game predominantly has 6 features, 5 of them being buttons and 1 of them being a dynamic message. I have also added a toggle instruction box explaining how the game works.
+                Game features are as follow;
+                <ul>
+                    <li><strong>Start Game:</strong> Randomly generates first card for the dealer and first two cards for the player</li>
+                    <li><strong>Start Over?:</strong> Resets the game when the game has ended, prompting you to go again</li>
+                    <li><strong>White message box:</strong> Text dynamically changes depending on the state of the game</li>
+                    <li><strong>Hit Me!:</strong> Randomly generates a new card for the player</li>
+                    <li><strong>Stay:</strong> Randomly generates a new card for the dealer</li>
+                    <li><strong>End Game:</strong> Ends the game when neither side has reached BlackJack or busted</li>
+                </ul>
+               </p>
 
                 <!-- <div class="design-imgs">
                     <img src="../../img/projects/BasketballScoreboardImg1.png" alt="Preview of the project" class="design-img-1" loading="lazy">
@@ -108,7 +118,7 @@
                     <img src="../../img/projects/BasketballScoreboard.designMobile.png" alt="" class="design-img-4" loading="lazy">
                 </div> -->
 
-                <img src="../../img/projects/basketballScoreboard/BasketballScoreboardImg1.png" alt="Preview of the project" class="solo-img" loading="lazy">
+                <img src="../../img/projects/blackjack/bjImg1.png" alt="Preview of the project" class="solo-img" loading="lazy">
 
            </div>
 
@@ -116,12 +126,17 @@
 
            <div class="challenge">
                 <h3>The Challenge</h3>
-                <p>I wanted the scoreboard to feel like a real game. Creating functions for each point button for both teams was the challenge. But here's the twist—I wanted to reset 
-                    scores without a page refresh. So, I added a reset button for users to swiftly reset scores and start a new game with one click. Optimal gaming experience achieved!</p>
+                <p>The challenge? The biggest challenge was mostly making it the gameplay work as I imagined it, which I have managed. It was no easy task, but with research and perseverance,
+                    I managed to make it work. I do still have one issue which I haven't yet managed to fix even though I've went through the JavaScript code many times, and also passed it to chatGPT
+                    yet, neither that could fix it. 
+                    
+                <p>The gameplay gets stuck after a few games, which I'm still working on getting it fixed. If any help can be provided to understand why this is happening,
+                    that would be amazing.</p>
+                </p>
            </div>
 
            <div class="video">
-               <video src="../../video/basketballscoreboardmov.mp4" autoplay loop></video>
+               <video src="../../video/bjmov.mp4" autoplay loop></video>
            </div>
 
 
