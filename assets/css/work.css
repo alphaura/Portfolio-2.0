@@ -295,10 +295,8 @@ h3 {
     margin: 0 auto;
     max-width: 60rem;
     font-style: italic;
-}
-
-.design ul li {
-    margin: 0 auto;
+    font-size: .8rem;
+    padding: 0 1.5rem 0 2.5rem;
 }
 
 .design img {
@@ -483,7 +481,7 @@ video {
         padding-block: 5rem;
     }
 
-    .process p, .design p, .challenge p {
+    .process p, .design p, .challenge p, .design ul {
         max-width: 40rem;
         margin: 0 auto;
     }
@@ -585,7 +583,7 @@ video {
         font-size: 2.2rem;
     }
 
-    .process p, .design p, .challenge p {
+    .process p, .design p, .challenge p, .design ul {
         max-width: 60rem;
         font-size: 1.1rem;
         font-weight: 400;
