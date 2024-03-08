@@ -71,6 +71,12 @@ img, video {
     background-image: url(../img/projects/blackjack/blackjack-bg.jpg);
 }
 
+.betsson-hero {
+    background-image: url(../img/projects/betsson-task/betsson-bg.png);
+    background-color: black;
+    background-size: contain;
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -233,6 +239,10 @@ h2 {
     background-image: url(../img/projects/blackjack/bjMockUp.png);
 }
 
+.betsson-mock {
+    background-image: url(../img/projects/betsson-task/betssonMockup.png);
+}
+
 /* Process Section */
 
 .process {
@@ -272,6 +282,10 @@ h3 {
     text-decoration: underline;
 }
 
+.betsson-list {
+    color: whitesmoke;
+}
+
 /* Design Section */
 
 .design {
@@ -291,7 +305,7 @@ h3 {
     padding-bottom: 3rem;
 }
 
-.design ul {
+.design ul, .betsson-list {
     margin: 0 auto;
     max-width: 60rem;
     font-style: italic;
@@ -481,7 +495,7 @@ video {
         padding-block: 5rem;
     }
 
-    .process p, .design p, .challenge p, .design ul {
+    .process p, .design p, .challenge p, .design ul, .betsson-list {
         max-width: 40rem;
         margin: 0 auto;
     }
@@ -583,7 +597,7 @@ video {
         font-size: 2.2rem;
     }
 
-    .process p, .design p, .challenge p, .design ul {
+    .process p, .design p, .challenge p, .design ul, .betsson-list {
         max-width: 60rem;
         font-size: 1.1rem;
         font-weight: 400;

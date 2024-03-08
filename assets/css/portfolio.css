@@ -56,6 +56,8 @@ h1 {
     }
 }
 
+/* Projects Section */
+
 #projects {
     background-color: whitesmoke;
 }
@@ -102,6 +104,12 @@ h2, h3 {
 
 h3 {
     color: lightgray;
+}
+
+.betsson-task .projects{
+    background-image: url(../img/projects/betsson-task/betsson-bg.png);
+    background-color: black;
+    background-size: contain;
 }
 
 @media ( min-width: 701px) {
