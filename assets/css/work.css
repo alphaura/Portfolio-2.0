@@ -77,6 +77,11 @@ img, video {
     background-size: contain;
 }
 
+.pressEnter-hero {
+    background-image: url(../img/projects/pressEnter/pressenter-bg.jpg);
+    background-position: bottom 20% center;
+}
+
 h1 {  
     text-align: center;
     font-size: 2.5rem;
@@ -241,6 +246,10 @@ h2 {
 
 .betsson-mock {
     background-image: url(../img/projects/betsson-task/betssonMockup.png);
+}
+
+.pressEnter-mock {
+    background-image: url(../img/projects/pressEnter/pressEnterMockUp.png);
 }
 
 /* Process Section */
